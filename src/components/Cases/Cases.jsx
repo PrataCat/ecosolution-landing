@@ -1,5 +1,12 @@
+import { Block } from "../About/About.styled";
+
 const Cases = () => {
-  return <p>This is Cases</p>;
+  return (
+    <div id="cases">
+      <p>This is Cases</p>
+      <Block></Block>
+    </div>
+  );
 };
 
 export default Cases;
