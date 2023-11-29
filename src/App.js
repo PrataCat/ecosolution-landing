@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Header";
-import BurgerModal from "./components/BurgerModal";
 import Main from "./components/Main";
 import About from "./components/About";
 import Electricity from "./components/Electricity";
@@ -13,7 +12,6 @@ function App() {
   return (
     <>
       <Header />
-      <BurgerModal />
       <main>
         <Main />
         <About />

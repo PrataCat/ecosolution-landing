@@ -1,27 +1,51 @@
+import { Link } from "react-scroll";
+import { useState } from "react";
 import {
   BtnWrap,
   Burger,
   ContactBtn,
   HeaderWrap,
-  IconClose,
   IconContact,
   Logo,
   MenuBtn,
-  ModalBtn,
   Nav,
 } from "./Header.styled";
 import logoicon from "../../images/sprite.svg";
-import { useState } from "react";
+import BurgerMenu from "../BurgerMenu";
 
 const Header = () => {
+  const [isScrolling, setIsScrolling] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [currentSection, setCurrentSection] = useState("");
 
-  const hendleClick = () => {
+  const changeBg = () => {
+    if (window.scrollY > 10) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBg);
+
+  const hendleClick = (e) => {
+    if (e === undefined) {
+      setIsOpenMenu(!isOpenMenu);
+    } else {
+      const section = e.target.textContent;
+
+      if (e.target.nodeName === "A") {
+        setCurrentSection(section);
+      }
+    }
+
     setIsOpenMenu(!isOpenMenu);
   };
 
   return (
-    <HeaderWrap>
+    <HeaderWrap
+      style={{ backgroundColor: isScrolling ? "#fff" : "transparent" }}
+    >
       <Nav>
         <Logo width={269} height={40}>
           <use href={`${logoicon}#icon-logo-svg`}></use>
@@ -34,21 +58,19 @@ const Header = () => {
               </Burger>
             </MenuBtn>
           ) : (
-            <>
-              <ModalBtn onClick={hendleClick}>
-                <IconClose width={20} height={20}>
-                  <use href={`${logoicon}#icon-close-light`}></use>
-                </IconClose>
-                close
-              </ModalBtn>
-            </>
+            <BurgerMenu
+              closeModal={hendleClick}
+              currentSection={currentSection}
+            />
           )}
-          <ContactBtn>
-            Get in touch
-            <IconContact width={14} height={14}>
-              <use href={`${logoicon}#icon-arrow-down`}></use>
-            </IconContact>
-          </ContactBtn>
+          <Link to="contact-us" spy={true} smooth={true}>
+            <ContactBtn>
+              Get in touch
+              <IconContact width={14} height={14}>
+                <use href={`${logoicon}#icon-arrow-down`}></use>
+              </IconContact>
+            </ContactBtn>
+          </Link>
         </BtnWrap>
       </Nav>
     </HeaderWrap>

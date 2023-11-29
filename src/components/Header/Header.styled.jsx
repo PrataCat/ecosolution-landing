@@ -4,7 +4,9 @@ export const HeaderWrap = styled.header`
   width: 100%;
   height: 112px;
 
-  border-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 export const Nav = styled.nav`
@@ -21,6 +23,7 @@ export const Nav = styled.nav`
   }
 `;
 
+//------------------Logo----------------------
 export const Logo = styled.svg`
   margin-left: 20px;
   margin-right: 11px;
@@ -29,11 +32,15 @@ export const Logo = styled.svg`
   cursor: pointer;
 `;
 
+//------------------Buttons----------------------
+
 export const BtnWrap = styled.div`
   margin-right: 20px;
 
-  display: flex;
-  gap: 12px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 12px;
+  }
 `;
 
 export const MenuBtn = styled.button`
@@ -56,40 +63,6 @@ export const Burger = styled.svg`
   &:focus {
     fill: #97d28b;
   }
-`;
-
-export const ModalBtn = styled.button`
-  width: 60px;
-  height: 20px;
-  margin-right: 19px;
-
-  display: flex;
-  justify-content: start;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  color: #000;
-
-  font-family: Fira Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.64px;
-
-  &:hover,
-  &:focus,
-  &:hover > svg,
-  &:focus > svg {
-    stroke: #97d28b;
-    color: #97d28b;
-  }
-`;
-
-export const IconClose = styled.svg`
-  stroke: #000;
-  color: #000;
 `;
 
 export const ContactBtn = styled.button`
