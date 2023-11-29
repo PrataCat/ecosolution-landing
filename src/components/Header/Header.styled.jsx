@@ -38,8 +38,13 @@ export const BtnWrap = styled.div`
   margin-right: 20px;
 
   @media screen and (min-width: 768px) {
+    margin-right: 30px;
     display: flex;
     gap: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 100px;
   }
 `;
 

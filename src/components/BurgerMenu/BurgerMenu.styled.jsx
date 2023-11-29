@@ -17,11 +17,11 @@ export const BackDrop = styled.div`
   z-index: 10;
 
   @media screen and (min-width: 768px) {
-    padding: 42px 30px;
+    padding: 36px 30px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 30px 100px;
+    padding: 36px 100px;
   }
 `;
 
@@ -48,15 +48,11 @@ export const MenuWrap = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 320px;
-    height: calc(100% - 84px);
-    top: 42px;
     right: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 365px;
-    height: calc(100% - 60px);
-    top: 30px;
     right: 100px;
   }
 `;
