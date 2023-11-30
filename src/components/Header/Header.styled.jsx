@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../variables";
 
 export const HeaderWrap = styled.header`
   width: 100%;
@@ -16,11 +17,6 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &:hover,
-  &:focus {
-    fill: #97d28b;
-  }
 `;
 
 //------------------Logo----------------------
@@ -28,8 +24,14 @@ export const Logo = styled.svg`
   margin-left: 20px;
   margin-right: 11px;
 
-  fill: #173d33;
+  fill: ${theme.accentColorDark};
   cursor: pointer;
+  transition: fill ${theme.transitionTimingFunction};
+
+  &:hover,
+  &:focus {
+    fill: ${theme.accentColor};
+  }
 `;
 
 //------------------Buttons----------------------
@@ -62,11 +64,12 @@ export const MenuBtn = styled.button`
 `;
 
 export const Burger = styled.svg`
-  fill: #dcefd8;
+  fill: ${theme.accentColorLight};
+  transition: fill ${theme.transitionTimingFunction};
 
   &:hover,
   &:focus {
-    fill: #97d28b;
+    fill: ${theme.accentColor};
   }
 `;
 
@@ -84,12 +87,12 @@ export const ContactBtn = styled.button`
     align-items: center;
     gap: 12px;
 
-    background-color: #97d28b;
+    background-color: ${theme.accentColor};
     border: none;
     border-radius: 500px;
     cursor: pointer;
 
-    color: #173d33;
+    color: ${theme.accentColorDark};
 
     font-family: Fira Sans;
     font-size: 16px;
@@ -98,19 +101,23 @@ export const ContactBtn = styled.button`
     line-height: normal;
     letter-spacing: -0.64px;
 
+    transition: color ${theme.transitionTimingFunction},
+      background-color ${theme.transitionTimingFunction};
+
     &:hover,
     &:focus {
-      color: #97d28b;
-      background-color: #173d33;
+      color: ${theme.accentColor};
+      background-color: ${theme.accentColorDark};
     }
 
     &:hover > svg,
     &:focus > svg {
-      fill: #97d28b;
+      fill: ${theme.accentColor};
     }
   }
 `;
 
 export const IconContact = styled.svg`
-  fill: #173d33;
+  fill: ${theme.accentColorDark};
+  transition: fill ${theme.transitionTimingFunction};
 `;

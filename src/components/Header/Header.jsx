@@ -47,9 +47,11 @@ const Header = () => {
       style={{ backgroundColor: isScrolling ? "#fff" : "transparent" }}
     >
       <Nav>
-        <Logo width={269} height={40}>
-          <use href={`${logoicon}#icon-logo-svg`}></use>
-        </Logo>
+        <Link to="main" spy={true} smooth={true}>
+          <Logo width={269} height={40}>
+            <use href={`${logoicon}#icon-logo-svg`}></use>
+          </Logo>
+        </Link>
         <BtnWrap>
           {!isOpenMenu ? (
             <MenuBtn onClick={hendleClick}>

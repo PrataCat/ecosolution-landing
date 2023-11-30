@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../variables";
 
 export const BackDrop = styled.div`
   width: 100vw;
@@ -12,7 +13,7 @@ export const BackDrop = styled.div`
   left: 0;
   right: 0;
 
-  background-color: rgba(23, 61, 51, 0.25);
+  background-color: ${theme.backDropBgColor};
   backdrop-filter: blur(2px);
   z-index: 10;
 
@@ -43,7 +44,7 @@ export const MenuWrap = styled.div`
   gap: 24px;
 
   border-radius: 25px;
-  background-color: rgba(23, 61, 51, 0.75);
+  background-color: ${theme.menuColor};
   backdrop-filter: blur(12.5px);
 
   @media screen and (min-width: 768px) {
@@ -71,7 +72,7 @@ export const BtnWrap = styled.div`
 
     display: block;
 
-    background-color: #fff;
+    background-color: ${theme.secondaryLightColor};
   }
 `;
 
@@ -82,11 +83,11 @@ export const ModalBtn = styled.button`
   display: flex;
   justify-content: flex-start;
 
-  background-color: transparent;
+  background-color: ${theme.secondaryHeaderBgColor};
   border: none;
   cursor: pointer;
 
-  color: #fff;
+  color: ${theme.secondaryLightColor};
 
   font-family: Fira Sans;
   font-size: 16px;
@@ -94,18 +95,22 @@ export const ModalBtn = styled.button`
   font-weight: 400;
   letter-spacing: -0.64px;
 
+  transition: color ${theme.transitionTimingFunction};
+
   &:hover,
   &:focus,
   &:hover > svg,
   &:focus > svg {
-    stroke: #97d28b;
-    color: #97d28b;
+    stroke: ${theme.accentColor};
+    color: ${theme.accentColor};
   }
 `;
 
 export const IconClose = styled.svg`
-  stroke: #fff;
-  color: #fff;
+  stroke: ${theme.secondaryLightColor};
+  color: ${theme.secondaryLightColor};
+  transition: stroke ${theme.transitionTimingFunction},
+    color ${theme.transitionTimingFunction};
 `;
 
 //-------------Nav-------------------
@@ -120,7 +125,7 @@ export const NavList = styled.ul`
 
 export const Item = styled.li`
   color: ${(props) =>
-    props.current ? "#97d28b" : "rgba(255, 255, 255, 0.25)"};
+    props.current ? theme.accentColor : theme.secondaryMenuColor};
 
   font-family: Fira Sans;
   font-size: 24px;
@@ -129,17 +134,20 @@ export const Item = styled.li`
   letter-spacing: -0.96px;
 
   cursor: pointer;
+  transition: stroke ${theme.transitionTimingFunction},
+    color ${theme.transitionTimingFunction};
 
   &:hover,
   &:focus,
   &:hover > svg,
   &:focus > svg {
-    color: #fff;
-    stroke: #fff;
+    color: ${theme.secondaryLightColor};
+    stroke: ${theme.secondaryLightColor};
   }
 `;
 
 export const NavIcon = styled.svg`
   margin-left: 8px;
-  stroke: rgba(255, 255, 255, 0.25);
+  stroke: ${theme.secondaryMenuColor};
+  transition: stroke ${theme.transitionTimingFunction};
 `;
