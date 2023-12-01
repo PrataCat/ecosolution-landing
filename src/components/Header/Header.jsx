@@ -3,15 +3,15 @@ import { useState } from "react";
 import {
   BtnWrap,
   Burger,
-  ContactBtn,
   HeaderWrap,
   IconContact,
   Logo,
-  MenuBtn,
   Nav,
 } from "./Header.styled";
 import logoicon from "../../images/sprite.svg";
 import BurgerMenu from "../BurgerMenu";
+import { Container } from "../../App.styled";
+import { BurgerBtn, ContactBtn } from "../Buttons/Buttons";
 
 const Header = () => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -46,35 +46,37 @@ const Header = () => {
     <HeaderWrap
       style={{ backgroundColor: isScrolling ? "#fff" : "transparent" }}
     >
-      <Nav>
-        <Link to="main" spy={true} smooth={true}>
-          <Logo width={269} height={40}>
-            <use href={`${logoicon}#icon-logo-svg`}></use>
-          </Logo>
-        </Link>
-        <BtnWrap>
-          {!isOpenMenu ? (
-            <MenuBtn onClick={hendleClick}>
-              <Burger width={40} height={40}>
-                <use href={`${logoicon}#icon-burger-menu`}></use>
-              </Burger>
-            </MenuBtn>
-          ) : (
-            <BurgerMenu
-              closeModal={hendleClick}
-              currentSection={currentSection}
-            />
-          )}
-          <Link to="contact-us" spy={true} smooth={true}>
-            <ContactBtn>
-              Get in touch
-              <IconContact width={14} height={14}>
-                <use href={`${logoicon}#icon-arrow-down`}></use>
-              </IconContact>
-            </ContactBtn>
+      <Container>
+        <Nav>
+          <Link to="main" spy={true} smooth={true}>
+            <Logo width={269} height={40}>
+              <use href={`${logoicon}#icon-logo-svg`}></use>
+            </Logo>
           </Link>
-        </BtnWrap>
-      </Nav>
+          <BtnWrap>
+            {!isOpenMenu ? (
+              <BurgerBtn prop={hendleClick}>
+                <Burger width={40} height={40}>
+                  <use href={`${logoicon}#icon-burger-menu`}></use>
+                </Burger>
+              </BurgerBtn>
+            ) : (
+              <BurgerMenu
+                closeModal={hendleClick}
+                currentSection={currentSection}
+              />
+            )}
+            <Link to="contact-us" spy={true} smooth={true}>
+              <ContactBtn>
+                Get in touch
+                <IconContact width={14} height={14}>
+                  <use href={`${logoicon}#icon-arrow-down`}></use>
+                </IconContact>
+              </ContactBtn>
+            </Link>
+          </BtnWrap>
+        </Nav>
+      </Container>
     </HeaderWrap>
   );
 };
