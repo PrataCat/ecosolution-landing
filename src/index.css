@@ -25,6 +25,7 @@ code {
 button {
   padding: 0;
   width: fit-content;
+  cursor: pointer;
 }
 
 html,
