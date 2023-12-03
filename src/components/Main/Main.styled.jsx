@@ -28,10 +28,10 @@ export const MainTitle = styled.h1`
   color: ${theme.accentColorDark};
 
   font-family: Oswald;
-  font-size: 64px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 36px;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -165,8 +165,6 @@ export const MainImg = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  border: none;
 
   @media (min-resolution: 2dppx) {
     background-image: url(${imgmob2x});

@@ -61,14 +61,6 @@ section {
   vertical-align: baseline;
 }
 
-/* footer,
-header,
-menu,
-nav,
-section {
-  display: block;
-} */
-
 ol,
 ul {
   list-style: none;
@@ -83,4 +75,22 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }

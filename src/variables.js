@@ -1,5 +1,6 @@
 export const theme = {
   mainBgColor: "#f3f5fa",
+  secondaryBgColor: "#EAEDF1;",
   accentColor: "#97d28b",
   accentColorLight: "#dcefd8",
   accentColorDark: "#173d33",
