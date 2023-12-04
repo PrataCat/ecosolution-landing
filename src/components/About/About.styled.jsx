@@ -91,7 +91,7 @@ export const ValueList = styled.ul`
   display: grid;
   gap: 24px;
 
-  grid-template-columns: repeat(auto-fit, minmax(148px, 148px));
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
 
   @media screen and (min-width: 768px) {
     margin-top: 100px;
