@@ -1,5 +1,5 @@
 import { Container } from "../../App.styled";
-import logoicon from "../../images/sprite.svg";
+import icon from "../../images/sprite.svg";
 import {
   AboutText,
   AboutHeadWrap,
@@ -33,7 +33,7 @@ const About = () => {
         <ValueItem>
           <ValueTitle>
             <IconGlobal>
-              <use href={`${logoicon}#icon-maximize-circle`}></use>
+              <use href={`${icon}#icon-maximize-circle`}></use>
             </IconGlobal>
             Openness
           </ValueTitle>
@@ -42,7 +42,7 @@ const About = () => {
         <ValueItem>
           <ValueTitle>
             <IconGlobal>
-              <use href={`${logoicon}#icon-global-edit`}></use>
+              <use href={`${icon}#icon-global-edit`}></use>
             </IconGlobal>
             Responsibility
           </ValueTitle>
@@ -56,7 +56,7 @@ const About = () => {
         <ValueItem>
           <ValueTitle>
             <IconGlobal>
-              <use href={`${logoicon}#icon-ranking`}></use>
+              <use href={`${icon}#icon-ranking`}></use>
             </IconGlobal>
             Innovation
           </ValueTitle>
@@ -67,7 +67,7 @@ const About = () => {
         <ValueItem>
           <ValueTitle>
             <IconGlobal>
-              <use href={`${logoicon}#icon-cpu-charge`}></use>
+              <use href={`${icon}#icon-cpu-charge`}></use>
             </IconGlobal>
             Quality
           </ValueTitle>
