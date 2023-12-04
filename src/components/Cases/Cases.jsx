@@ -59,6 +59,7 @@ const Cases = () => {
         pageUpDown: true,
       },
       loop: true,
+      grabCursor: true,
       breakpoints: {
         768: {
           slidesPerView: 2,

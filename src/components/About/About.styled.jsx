@@ -91,18 +91,18 @@ export const ValueList = styled.ul`
   display: grid;
   gap: 24px;
 
-  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(148px, 148px));
 
   @media screen and (min-width: 768px) {
     margin-top: 100px;
 
-    grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(159px, 159px));
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 122px;
 
-    grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(274px, 274px));
     gap: 48px;
   }
 `;

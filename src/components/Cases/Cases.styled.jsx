@@ -10,6 +10,7 @@ export const SwiperSlider = styled.div`
 
 export const SwiperHeadWrap = styled.div`
   width: 100%;
+  min-width: 0;
   margin-top: 36px;
   margin-bottom: 19px;
 
@@ -117,8 +118,7 @@ export const SwiperBtnPrev = styled.button`
   background-color: transparent;
   border: none;
 
-  &:hover > svg,
-  &:focus > svg {
+  &:hover > svg {
     stroke: ${theme.accentColor};
   }
 `;
@@ -134,8 +134,7 @@ export const SwiperBtnNext = styled.button`
   background-color: transparent;
   border: none;
 
-  &:hover > svg,
-  &:focus > svg {
+  &:hover > svg {
     stroke: ${theme.accentColor};
   }
 `;
