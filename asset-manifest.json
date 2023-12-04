@@ -1,26 +1,36 @@
 {
   "files": {
-    "main.css": "/ecosolution-landing/static/css/main.067b1cef.css",
-    "main.js": "/ecosolution-landing/static/js/main.be62726d.js",
+    "main.css": "/ecosolution-landing/static/css/main.f62ed1f2.css",
+    "main.js": "/ecosolution-landing/static/js/main.d2b88379.js",
     "static/media/main-img-2x.jpg": "/ecosolution-landing/static/media/main-img-2x.f99bb41a30de3bb0365f.jpg",
     "static/media/main-img-tab-2x.jpg": "/ecosolution-landing/static/media/main-img-tab-2x.46f8d32840c32a278f71.jpg",
+    "static/media/slide2-2x.jpg": "/ecosolution-landing/static/media/slide2-2x.bdcb0dee6709ff083596.jpg",
     "static/media/main-img.jpg": "/ecosolution-landing/static/media/main-img.7b2c49a5ad33b3cb8d7a.jpg",
+    "static/media/slide3-2x.jpg": "/ecosolution-landing/static/media/slide3-2x.50528776552e336ecb3c.jpg",
+    "static/media/slide1-2x.jpg": "/ecosolution-landing/static/media/slide1-2x.52019e7a35d923b7a474.jpg",
+    "static/media/slide5-2x.jpg": "/ecosolution-landing/static/media/slide5-2x.951a8a79171e0c2ac520.jpg",
     "static/media/value-windmill-2x.jpg": "/ecosolution-landing/static/media/value-windmill-2x.189a526ad8da8bd83153.jpg",
+    "static/media/slide4-2x.jpg": "/ecosolution-landing/static/media/slide4-2x.e0cbd88435f03905c1c8.jpg",
     "static/media/value-solar-battery-2x.jpg": "/ecosolution-landing/static/media/value-solar-battery-2x.cd6d64316698c562e655.jpg",
     "static/media/main-img-mob-2x.jpg": "/ecosolution-landing/static/media/main-img-mob-2x.c338c46d88747eaad094.jpg",
     "static/media/main-img-tab.jpg": "/ecosolution-landing/static/media/main-img-tab.55128b24c07555407dd3.jpg",
+    "static/media/slide2.jpg": "/ecosolution-landing/static/media/slide2.3a56cff3b695f17d72a9.jpg",
+    "static/media/slide3.jpg": "/ecosolution-landing/static/media/slide3.935c9650ca7600b57eef.jpg",
     "static/media/value-windmill-tab-2x.jpg": "/ecosolution-landing/static/media/value-windmill-tab-2x.26df2b3c5cb4d1fd1c45.jpg",
+    "static/media/slide5.jpg": "/ecosolution-landing/static/media/slide5.323645050cf86706a8f0.jpg",
+    "static/media/slide1.jpg": "/ecosolution-landing/static/media/slide1.ffe7109a6b1fc86b2703.jpg",
     "static/media/value-windmill.jpg": "/ecosolution-landing/static/media/value-windmill.06f1db12b1dba156a029.jpg",
     "static/media/value-solar-battery-tab-2x.jpg": "/ecosolution-landing/static/media/value-solar-battery-tab-2x.f30ecc092d2ffe63ea31.jpg",
+    "static/media/slide4.jpg": "/ecosolution-landing/static/media/slide4.02761914d70c35d1820c.jpg",
+    "static/media/sprite.svg": "/ecosolution-landing/static/media/sprite.45a6135d330ba59e5085d7a0ba38456c.svg",
     "static/media/value-solar-battery.jpg": "/ecosolution-landing/static/media/value-solar-battery.270c2d64aebed7b10e9d.jpg",
-    "static/media/sprite.svg": "/ecosolution-landing/static/media/sprite.ffe18b6495276906e6bd7527d7c333fb.svg",
     "static/media/main-img-mob.jpg": "/ecosolution-landing/static/media/main-img-mob.f416eb346719f4b63af0.jpg",
     "index.html": "/ecosolution-landing/index.html",
-    "main.067b1cef.css.map": "/ecosolution-landing/static/css/main.067b1cef.css.map",
-    "main.be62726d.js.map": "/ecosolution-landing/static/js/main.be62726d.js.map"
+    "main.f62ed1f2.css.map": "/ecosolution-landing/static/css/main.f62ed1f2.css.map",
+    "main.d2b88379.js.map": "/ecosolution-landing/static/js/main.d2b88379.js.map"
   },
   "entrypoints": [
-    "static/css/main.067b1cef.css",
-    "static/js/main.be62726d.js"
+    "static/css/main.f62ed1f2.css",
+    "static/js/main.d2b88379.js"
   ]
 }
