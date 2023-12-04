@@ -20,35 +20,39 @@ export const BurgerMenuBtn = styled.button`
 `;
 
 export const AccentBtn = styled.button`
-  display: none;
+  width: 130px;
+  height: 39px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: ${(props) => (props.active ? "flex" : "none")};
+  margin-left: ${(props) => (props.active ? "auto" : "0")};
+  margin-right: ${(props) => (props.active ? "auto" : "0")};
+  margin-top: ${(props) => (props.active ? "12px" : "0")};
+  justify-content: center;
+  align-items: center;
+  gap: ${theme.mainGap};
+
+  color: ${theme.accentColorDark};
+  background-color: ${theme.accentColor};
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  transition: color ${theme.transitionTimingFunction},
+    background-color ${theme.transitionTimingFunction};
 
   @media screen and (min-width: 768px) {
     width: 140px;
-    height: 39px;
     padding-top: 10px;
     padding-bottom: 10px;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: ${theme.mainGap};
-
-    background-color: ${theme.accentColor};
-    border: none;
-    border-radius: 500px;
-    cursor: pointer;
-
-    color: ${theme.accentColorDark};
-
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.64px;
-
-    transition: color ${theme.transitionTimingFunction},
-      background-color ${theme.transitionTimingFunction};
   }
 
   &:hover {

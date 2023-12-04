@@ -11,6 +11,7 @@ export const HeaderWrap = styled.header`
 
   display: flex;
   align-items: center;
+  z-index: 15;
 `;
 
 export const Nav = styled.nav`

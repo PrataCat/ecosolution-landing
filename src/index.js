@@ -6,9 +6,7 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <BrowserRouter basename="ecosolution-landing">
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  // </BrowserRouter>
 );
