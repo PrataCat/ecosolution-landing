@@ -1,8 +1,12 @@
+import { Container } from "../../App.styled";
+import { ContactTitle } from "./ContactUs.styled";
+
 const ContactUs = () => {
   return (
-    <div id="contact-us">
-      <p>This is Contact Us</p>
-    </div>
+    <Container id="contact-us">
+      <ContactTitle>Contact Us</ContactTitle>
+      <div></div>
+    </Container>
   );
 };
 
