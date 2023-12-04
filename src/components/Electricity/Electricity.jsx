@@ -1,8 +1,15 @@
+import { Container } from "../../App.styled";
+import { ElectrSpan, ElectrText, ElectrTitle } from "./Electricity.styled";
+
 const Electricity = () => {
   return (
-    <div id="electricity">
-      <p>This is Electricity</p>
-    </div>
+    <Container id="electricity">
+      <ElectrTitle>Electricity we produced for all time</ElectrTitle>
+      <ElectrText>
+        1.134.147.814
+        <ElectrSpan>kWh</ElectrSpan>
+      </ElectrText>
+    </Container>
   );
 };
 
