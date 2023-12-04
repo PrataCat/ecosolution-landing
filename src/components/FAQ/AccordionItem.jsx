@@ -9,13 +9,13 @@ import {
 
 const AccordionItem = ({ ask, answer, isActive, onClick }) => {
   return (
-    <Item active={isActive ? true : false} onClick={onClick}>
-      <AccordionIcon active={isActive ? true : false}>
-        <StrokeOne active={isActive ? true : false}></StrokeOne>
+    <Item active={isActive ? "true" : null} onClick={onClick}>
+      <AccordionIcon active={isActive ? "true" : null}>
+        <StrokeOne active={isActive ? "true" : null}></StrokeOne>
         <StrokeTwo></StrokeTwo>
       </AccordionIcon>
       <Ask>{ask}</Ask>
-      <Answer active={isActive ? true : false}>{answer}</Answer>
+      <Answer active={isActive ? "true" : null}>{answer}</Answer>
     </Item>
   );
 };

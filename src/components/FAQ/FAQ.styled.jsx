@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { theme } from "../../variables";
-import { Link } from "react-scroll";
 
 export const AccordionWrap = styled.div`
   width: 100%;
