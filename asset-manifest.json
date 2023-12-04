@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution-landing/static/css/main.f62ed1f2.css",
-    "main.js": "/ecosolution-landing/static/js/main.524f0ae6.js",
+    "main.css": "/ecosolution-landing/static/css/main.236a7ae4.css",
+    "main.js": "/ecosolution-landing/static/js/main.65575978.js",
     "static/media/main-img-2x.jpg": "/ecosolution-landing/static/media/main-img-2x.f99bb41a30de3bb0365f.jpg",
     "static/media/main-img-tab-2x.jpg": "/ecosolution-landing/static/media/main-img-tab-2x.46f8d32840c32a278f71.jpg",
     "static/media/slide2-2x.jpg": "/ecosolution-landing/static/media/slide2-2x.bdcb0dee6709ff083596.jpg",
@@ -26,11 +26,11 @@
     "static/media/value-solar-battery.jpg": "/ecosolution-landing/static/media/value-solar-battery.270c2d64aebed7b10e9d.jpg",
     "static/media/main-img-mob.jpg": "/ecosolution-landing/static/media/main-img-mob.f416eb346719f4b63af0.jpg",
     "index.html": "/ecosolution-landing/index.html",
-    "main.f62ed1f2.css.map": "/ecosolution-landing/static/css/main.f62ed1f2.css.map",
-    "main.524f0ae6.js.map": "/ecosolution-landing/static/js/main.524f0ae6.js.map"
+    "main.236a7ae4.css.map": "/ecosolution-landing/static/css/main.236a7ae4.css.map",
+    "main.65575978.js.map": "/ecosolution-landing/static/js/main.65575978.js.map"
   },
   "entrypoints": [
-    "static/css/main.f62ed1f2.css",
-    "static/js/main.524f0ae6.js"
+    "static/css/main.236a7ae4.css",
+    "static/js/main.65575978.js"
   ]
 }
