@@ -1,14 +1,26 @@
 {
   "files": {
-    "main.css": "/ecosolution-landing/static/css/main.073c8d46.css",
-    "main.js": "/ecosolution-landing/static/js/main.bd2078cc.js",
-    "static/media/sprite.svg": "/ecosolution-landing/static/media/sprite.724645179ebfe44156c0abac0391a4e6.svg",
+    "main.css": "/ecosolution-landing/static/css/main.067b1cef.css",
+    "main.js": "/ecosolution-landing/static/js/main.be62726d.js",
+    "static/media/main-img-2x.jpg": "/ecosolution-landing/static/media/main-img-2x.f99bb41a30de3bb0365f.jpg",
+    "static/media/main-img-tab-2x.jpg": "/ecosolution-landing/static/media/main-img-tab-2x.46f8d32840c32a278f71.jpg",
+    "static/media/main-img.jpg": "/ecosolution-landing/static/media/main-img.7b2c49a5ad33b3cb8d7a.jpg",
+    "static/media/value-windmill-2x.jpg": "/ecosolution-landing/static/media/value-windmill-2x.189a526ad8da8bd83153.jpg",
+    "static/media/value-solar-battery-2x.jpg": "/ecosolution-landing/static/media/value-solar-battery-2x.cd6d64316698c562e655.jpg",
+    "static/media/main-img-mob-2x.jpg": "/ecosolution-landing/static/media/main-img-mob-2x.c338c46d88747eaad094.jpg",
+    "static/media/main-img-tab.jpg": "/ecosolution-landing/static/media/main-img-tab.55128b24c07555407dd3.jpg",
+    "static/media/value-windmill-tab-2x.jpg": "/ecosolution-landing/static/media/value-windmill-tab-2x.26df2b3c5cb4d1fd1c45.jpg",
+    "static/media/value-windmill.jpg": "/ecosolution-landing/static/media/value-windmill.06f1db12b1dba156a029.jpg",
+    "static/media/value-solar-battery-tab-2x.jpg": "/ecosolution-landing/static/media/value-solar-battery-tab-2x.f30ecc092d2ffe63ea31.jpg",
+    "static/media/value-solar-battery.jpg": "/ecosolution-landing/static/media/value-solar-battery.270c2d64aebed7b10e9d.jpg",
+    "static/media/sprite.svg": "/ecosolution-landing/static/media/sprite.ffe18b6495276906e6bd7527d7c333fb.svg",
+    "static/media/main-img-mob.jpg": "/ecosolution-landing/static/media/main-img-mob.f416eb346719f4b63af0.jpg",
     "index.html": "/ecosolution-landing/index.html",
-    "main.073c8d46.css.map": "/ecosolution-landing/static/css/main.073c8d46.css.map",
-    "main.bd2078cc.js.map": "/ecosolution-landing/static/js/main.bd2078cc.js.map"
+    "main.067b1cef.css.map": "/ecosolution-landing/static/css/main.067b1cef.css.map",
+    "main.be62726d.js.map": "/ecosolution-landing/static/js/main.be62726d.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c8d46.css",
-    "static/js/main.bd2078cc.js"
+    "static/css/main.067b1cef.css",
+    "static/js/main.be62726d.js"
   ]
 }
