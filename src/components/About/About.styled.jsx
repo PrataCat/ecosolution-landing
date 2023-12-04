@@ -39,22 +39,23 @@ export const AboutTitle = styled.h2`
 `;
 
 export const AboutLine = styled.div`
-  display: none;
-
-  background-color: ${theme.accentColor};
+  display: flex;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
-    width: 1px;
-    height: 110px;
+    &::before {
+      content: "";
+      width: 1px;
+      height: 110px;
 
-    display: block;
-
-    background-color: ${theme.accentColor};
+      background-color: ${theme.accentColor};
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1px;
-    height: 87px;
+    &::before {
+      height: 87px;
+    }
   }
 `;
 
@@ -78,6 +79,7 @@ export const AboutText = styled.p`
 
   @media screen and (min-width: 1280px) {
     width: 459px;
+    margin-left: 161px;
   }
 `;
 
@@ -177,7 +179,9 @@ export const SolarBattery = styled.li`
 `;
 
 export const ValueTitle = styled.h3`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   color: ${theme.accentColorDark};
 
@@ -187,34 +191,26 @@ export const ValueTitle = styled.h3`
   line-height: 24px;
   text-transform: uppercase;
 
-  &::after {
-    content: "";
-    width: 124px;
-    height: 1px;
-
-    margin: 33px auto 0 auto;
-
-    display: block;
-
-    background-color: ${theme.accentColor};
-  }
   @media screen and (min-width: 768px) {
     font-size: 18px;
-
-    &::after {
-      width: 135px;
-      margin: 51px auto 0 auto;
-    }
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 32px;
     line-height: 48px;
+  }
+`;
 
-    &::after {
-      width: 226px;
-      margin: 94px auto 0 auto;
-    }
+export const IconGlobal = styled.svg`
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  fill: transparent;
+  stroke: ${theme.accentColorDark};
+
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 24px;
   }
 `;
 
@@ -228,7 +224,23 @@ export const ValueText = styled.p`
   font-weight: 400;
   letter-spacing: -0.56px;
 
+  &::before {
+    content: "";
+    width: 124px;
+    height: 1px;
+
+    margin: 33px auto 12px auto;
+
+    display: block;
+
+    background-color: ${theme.accentColor};
+  }
+
   @media screen and (min-width: 768px) {
+    &::before {
+      width: 135px;
+      margin: 51px auto 12px auto;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -236,5 +248,10 @@ export const ValueText = styled.p`
 
     font-size: 16px;
     letter-spacing: -0.64px;
+
+    &::before {
+      width: 226px;
+      margin: 94px auto 24px auto;
+    }
   }
 `;

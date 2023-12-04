@@ -1,6 +1,5 @@
 import { Container } from "../../App.styled";
 import logoicon from "../../images/sprite.svg";
-import { IconClose } from "../BurgerMenu/BurgerMenu.styled";
 import {
   AboutText,
   AboutHeadWrap,
@@ -12,6 +11,7 @@ import {
   ValueText,
   WindMill,
   SolarBattery,
+  IconGlobal,
 } from "./About.styled";
 
 const About = () => {
@@ -19,30 +19,31 @@ const About = () => {
     <Container name="about">
       <AboutHeadWrap>
         <AboutTitle>Main values of our company</AboutTitle>
-        <AboutLine></AboutLine>
-        <AboutText>
-          EcoSolution envisions a world where sustainable energy solutions power
-          a brighter and cleaner future for all. We aspire to be at the
-          forefront of the global shift towards renewable energy, leading the
-          way in innovative technologies that harness the power of nature to
-          meet the world's energy needs.
-        </AboutText>
+        <AboutLine>
+          <AboutText>
+            EcoSolution envisions a world where sustainable energy solutions
+            power a brighter and cleaner future for all. We aspire to be at the
+            forefront of the global shift towards renewable energy, leading the
+            way in innovative technologies that harness the power of nature to
+            meet the world's energy needs.
+          </AboutText>
+        </AboutLine>
       </AboutHeadWrap>
       <ValueList>
         <ValueItem>
           <ValueTitle>
-            <IconClose width={20} height={20}>
-              <use href={`${logoicon}#icon-close-light`}></use>
-            </IconClose>
+            <IconGlobal>
+              <use href={`${logoicon}#icon-maximize-circle`}></use>
+            </IconGlobal>
             Openness
           </ValueTitle>
           <ValueText>to the world, people, new ideas and projects</ValueText>
         </ValueItem>
         <ValueItem>
           <ValueTitle>
-            <IconClose width={20} height={20}>
-              <use href={`${logoicon}#icon-close-light`}></use>
-            </IconClose>
+            <IconGlobal>
+              <use href={`${logoicon}#icon-global-edit`}></use>
+            </IconGlobal>
             Responsibility
           </ValueTitle>
           <ValueText>
@@ -54,9 +55,9 @@ const About = () => {
         <SolarBattery></SolarBattery>
         <ValueItem>
           <ValueTitle>
-            <IconClose width={20} height={20}>
-              <use href={`${logoicon}#icon-close-light`}></use>
-            </IconClose>
+            <IconGlobal>
+              <use href={`${logoicon}#icon-ranking`}></use>
+            </IconGlobal>
             Innovation
           </ValueTitle>
           <ValueText>
@@ -65,9 +66,9 @@ const About = () => {
         </ValueItem>
         <ValueItem>
           <ValueTitle>
-            <IconClose width={20} height={20}>
-              <use href={`${logoicon}#icon-close-light`}></use>
-            </IconClose>
+            <IconGlobal>
+              <use href={`${logoicon}#icon-cpu-charge`}></use>
+            </IconGlobal>
             Quality
           </ValueTitle>
           <ValueText>
