@@ -6,22 +6,16 @@ import { useEffect } from "react";
 
 import icon from "../../images/sprite.svg";
 import { Container } from "../../App.styled";
+import SwiperSlide from "./SwiperSlide";
 import {
   CasesTitle,
   SwiperBtnNext,
   SwiperBtnPrev,
-  SwiperSlide,
   SwiperSlider,
   SliderIcon,
   SwiperBtnWrap,
   SwiperPage,
   SwiperNav,
-  SlideTitle,
-  SliderBottomIcon,
-  BtnMore,
-  SlideTitleWrap,
-  SliderText,
-  SlideTextWrap,
   SwiperHeadWrap,
   CasesTitleWrap,
 } from "./Cases.styled";
@@ -35,6 +29,34 @@ import slideImg4 from "../../images/slide4.jpg";
 import slideImg4ret from "../../images/slide4-2x.jpg";
 import slideImg5 from "../../images/slide5.jpg";
 import slideImg5ret from "../../images/slide5-2x.jpg";
+
+const slideData = {
+  one: {
+    title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
+    text: "Wind Power for auto field irrigation",
+    date: "July 2023",
+  },
+  two: {
+    title: "Zhytomyr city Private Enterprise “Bosch”",
+    text: "Solar Panels for industrial use",
+    date: "November 2023",
+  },
+  three: {
+    title: "Rivne city Private Enterprise “Biotech”",
+    text: "Thermal modules",
+    date: "October 2023",
+  },
+  four: {
+    title: "Kherson city Private Enterprise “HealthyFarm”",
+    text: "Wind power",
+    date: "September 2021",
+  },
+  five: {
+    title: "Zaporizhia city Private Enterprise “Biotech”",
+    text: "Mini nuclear stations",
+    date: "May 2021",
+  },
+};
 
 const Cases = () => {
   useEffect(() => {
@@ -99,117 +121,49 @@ const Cases = () => {
         </SwiperHeadWrap>
         <div className="swiper-wrapper">
           <div className="swiper-slide">
-            <SwiperSlide>
-              <img
-                srcSet={`${slideImg1} 1x, ${slideImg1ret} 2x`}
-                src={slideImg1}
-                alt="wind powers in the field"
-              ></img>
-              <SlideTitleWrap>
-                <SlideTitle>
-                  Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
-                </SlideTitle>
-                <BtnMore>
-                  <SliderBottomIcon width={28} height={28}>
-                    <use href={`${icon}#icon-arrow-diag1`}></use>
-                  </SliderBottomIcon>
-                </BtnMore>
-              </SlideTitleWrap>
-              <SlideTextWrap>
-                <SliderText>Wind Power for auto field irrigation</SliderText>
-                <SliderText>July 2023</SliderText>
-              </SlideTextWrap>
-            </SwiperSlide>
+            <SwiperSlide
+              img={slideImg1}
+              bigImg={slideImg1ret}
+              title={slideData.one.title}
+              text={slideData.one.text}
+              date={slideData.one.date}
+            />
           </div>
           <div className="swiper-slide">
-            <SwiperSlide>
-              <img
-                srcSet={`${slideImg2} 1x, ${slideImg2ret} 2x`}
-                src={slideImg2}
-                alt="solar panels"
-              ></img>
-              <SlideTitleWrap>
-                <SlideTitle>
-                  Zhytomyr city Private Enterprise “Bosch”
-                </SlideTitle>
-                <BtnMore>
-                  <SliderBottomIcon width={28} height={28}>
-                    <use href={`${icon}#icon-arrow-diag1`}></use>
-                  </SliderBottomIcon>
-                </BtnMore>
-              </SlideTitleWrap>
-              <SlideTextWrap>
-                <SliderText>Solar Panels for industrial use</SliderText>
-                <SliderText>November 2023</SliderText>
-              </SlideTextWrap>
-            </SwiperSlide>
+            <SwiperSlide
+              img={slideImg2}
+              bigImg={slideImg2ret}
+              title={slideData.two.title}
+              text={slideData.two.text}
+              date={slideData.two.date}
+            />
           </div>
           <div className="swiper-slide">
-            <SwiperSlide>
-              <img
-                srcSet={`${slideImg3} 1x, ${slideImg3ret} 2x`}
-                src={slideImg3}
-                alt="thermal modules"
-              ></img>
-              <SlideTitleWrap>
-                <SlideTitle>Rivne city Private Enterprise “Biotech”</SlideTitle>
-                <BtnMore>
-                  <SliderBottomIcon width={28} height={28}>
-                    <use href={`${icon}#icon-arrow-diag1`}></use>
-                  </SliderBottomIcon>
-                </BtnMore>
-              </SlideTitleWrap>
-              <SlideTextWrap>
-                <SliderText>Thermal modules</SliderText>
-                <SliderText>October 2023</SliderText>
-              </SlideTextWrap>
-            </SwiperSlide>
+            <SwiperSlide
+              img={slideImg3}
+              bigImg={slideImg3ret}
+              title={slideData.three.title}
+              text={slideData.three.text}
+              date={slideData.three.date}
+            />
           </div>
           <div className="swiper-slide">
-            <SwiperSlide>
-              <img
-                srcSet={`${slideImg4} 1x, ${slideImg4ret} 2x`}
-                src={slideImg4}
-                alt="wind powers in the field"
-              ></img>
-              <SlideTitleWrap>
-                <SlideTitle>
-                  Kherson city Private Enterprise “HealthyFarm”
-                </SlideTitle>
-                <BtnMore>
-                  <SliderBottomIcon width={28} height={28}>
-                    <use href={`${icon}#icon-arrow-diag1`}></use>
-                  </SliderBottomIcon>
-                </BtnMore>
-              </SlideTitleWrap>
-              <SlideTextWrap>
-                <SliderText>Wind power</SliderText>
-                <SliderText>September 2021</SliderText>
-              </SlideTextWrap>
-            </SwiperSlide>
+            <SwiperSlide
+              img={slideImg4}
+              bigImg={slideImg4ret}
+              title={slideData.four.title}
+              text={slideData.four.text}
+              date={slideData.four.date}
+            />
           </div>
           <div className="swiper-slide">
-            <SwiperSlide>
-              <img
-                srcSet={`${slideImg5} 1x, ${slideImg5ret} 2x`}
-                src={slideImg5}
-                alt="mini nuclear stations"
-              ></img>
-              <SlideTitleWrap>
-                <SlideTitle>
-                  Zaporizhia city Private Enterprise “Biotech”
-                </SlideTitle>
-                <BtnMore>
-                  <SliderBottomIcon width={28} height={28}>
-                    <use href={`${icon}#icon-arrow-diag1`}></use>
-                  </SliderBottomIcon>
-                </BtnMore>
-              </SlideTitleWrap>
-              <SlideTextWrap>
-                <SliderText>Mini nuclear stations</SliderText>
-                <SliderText>May 2021</SliderText>
-              </SlideTextWrap>
-            </SwiperSlide>
+            <SwiperSlide
+              img={slideImg5}
+              bigImg={slideImg5ret}
+              title={slideData.five.title}
+              text={slideData.five.text}
+              date={slideData.five.date}
+            />
           </div>
         </div>
 

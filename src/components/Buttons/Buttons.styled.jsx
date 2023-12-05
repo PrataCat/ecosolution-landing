@@ -21,7 +21,7 @@ export const BurgerMenuBtn = styled.button`
 
 export const AccentBtn = styled.button`
   width: 130px;
-  height: 39px;
+  height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   display: ${(props) => (props.active ? "flex" : "none")};
@@ -66,7 +66,7 @@ export const AccentBtn = styled.button`
 `;
 
 export const SecondaryBtn = styled.button`
-  height: 39px;
+  height: 40px;
 
   padding-left: 16px;
   padding-right: 4px;
@@ -100,4 +100,35 @@ export const SecondaryBtn = styled.button`
   &:hover > svg {
     fill: ${theme.accentColor};
   }
+`;
+
+export const BtnMore = styled.button`
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${theme.accentColor};
+  border-radius: 100px;
+  border: 0;
+
+  transition: background-color ${theme.transitionTimingFunction},
+    stroke ${theme.transitionTimingFunction};
+
+  &:hover,
+  &:focus,
+  &:hover > svg,
+  &:focus > svg {
+    stroke: ${theme.accentColor};
+    background-color: ${theme.accentColorDark};
+  }
+`;
+
+export const SliderBottomIcon = styled.svg`
+  fill: transparent;
+  background-color: transparent;
+  stroke: ${theme.accentColorDark};
+  border-radius: 50px;
 `;
