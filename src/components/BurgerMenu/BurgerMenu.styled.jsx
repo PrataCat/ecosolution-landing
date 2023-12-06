@@ -15,7 +15,7 @@ export const BackDrop = styled.div`
 
   background-color: ${theme.backDropBgColor};
   backdrop-filter: blur(2px);
-  z-index: 10;
+  z-index: 17;
 
   @media screen and (min-width: 768px) {
     padding: 36px 30px;
