@@ -118,9 +118,7 @@ export const BtnMore = styled.button`
     stroke ${theme.transitionTimingFunction};
 
   &:hover,
-  &:focus,
-  &:hover > svg,
-  &:focus > svg {
+  &:hover > svg {
     stroke: ${theme.accentColor};
     background-color: ${theme.accentColorDark};
   }

@@ -8,6 +8,7 @@ import {
   AccordionTitle,
   AccordionWrap,
   LastQuest,
+  LastQuestWrap,
 } from "./FAQ.styled";
 import { ContactBtn } from "../Buttons/Buttons";
 import { IconContact } from "../Header/Header.styled";
@@ -84,17 +85,19 @@ const FAQ = () => {
             isActive={currentActive === 5}
             onClick={() => hendleAccordionClick(5)}
           />
-        </AccordionList>
+        </AccordionList>{" "}
+        <LastQuestWrap>
+          <LastQuest>Didn't find the answer to your question?</LastQuest>
+          <Link to="contact-us" spy={true} smooth={true}>
+            <ContactBtn prop={"active"}>
+              Contact Us
+              <IconContact width={14} height={14}>
+                <use href={`${icon}#icon-arrow-down`}></use>
+              </IconContact>
+            </ContactBtn>
+          </Link>
+        </LastQuestWrap>
       </AccordionWrap>
-      <LastQuest>Didn't find the answer to your question?</LastQuest>
-      <Link to="contact-us" spy={true} smooth={true}>
-        <ContactBtn prop={"active"}>
-          Contact Us
-          <IconContact width={14} height={14}>
-            <use href={`${icon}#icon-arrow-down`}></use>
-          </IconContact>
-        </ContactBtn>
-      </Link>
     </Container>
   );
 };

@@ -13,47 +13,82 @@ export const Item = styled.li`
 
   border-top: 1px solid ${theme.accentColor};
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 `;
+export const AskWrap = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const AccordionIcon = styled.button`
-  content: "";
-  position: absolute;
   width: 16px;
   height: 16px;
-  transform: translateX(-2.5rem) translateY(-0.25rem);
+  padding: 4px;
+  margin-right: 8px;
+
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 24px;
+  }
 `;
 
 export const StrokeOne = styled.div`
-  content: "";
-  position: relative;
-  z-zindex: 1;
-  transition: 0.5s all;
-
-  width: 2px;
-  height: 16px;
+  width: 1px;
+  height: 8px;
 
   background-color: ${theme.accentColor};
   transform: ${(props) =>
     props.active
-      ? "translateX(calc(16px / 2 - 1px)) rotate(90deg)"
-      : "translateX(calc(16px / 2 - 1px)) rotate(0deg)"};
+      ? "translateX(calc(8px / 2 - 0.5px)) rotate(90deg)"
+      : "translateX(calc(8px / 2 - 0.5px)) rotate(0deg)"};
+  transition: 0.5s all;
+
+  @media screen and (min-width: 768px) {
+    width: 2px;
+    height: 14px;
+
+    transform: ${(props) =>
+      props.active
+        ? "translateX(calc(14px / 2 - 1px)) rotate(90deg)"
+        : "translateX(calc(14px / 2 - 1px)) rotate(0deg)"};
+  }
 `;
 
 export const StrokeTwo = styled.div`
-  content: "";
-  position: relative;
-  z-zindex: 2;
-  transition: 0.5s all;
-
-  width: 16px;
-  height: 2px;
+  width: 8px;
+  height: 1px;
 
   background-color: ${theme.accentColor};
   transform: ${(props) =>
     props.active
-      ? "translateY(calc(-16px / 2 - 1px))"
-      : "translateY(calc(-16px / 2 - 1px))"};
+      ? "translateY(calc(-8px / 2 - 0.5px))"
+      : "translateY(calc(-8px / 2 - 0.5px))"};
+  transition: 0.5s all;
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 2px;
+    transform: ${(props) =>
+      props.active
+        ? "translateY(calc(-14px / 2 - 1px))"
+        : "translateY(calc(-14px / 2 - 1px))"};
+  }
 `;
 
 export const Ask = styled.h4`
@@ -77,8 +112,7 @@ export const Ask = styled.h4`
 export const Answer = styled.p`
   max-height: ${(props) => (props.active ? "auto " : "0")};
   margin-top: ${(props) => (props.active ? "16px" : "0")};
-  margin-bottom: ${(props) => (props.active ? "16px" : "0")};
-  margin-left: 0;
+  margin-left: 24px;
   margin-right: 0;
 
   overflow: hidden;
@@ -98,9 +132,12 @@ export const Answer = styled.p`
   }
 
   @media screen and (min-width: 768px) {
+    margin-left: 44px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-top: ${(props) => (props.active ? "24px" : "0")};
+    margin-left: 52px;
     font-size: 16px;
     letter-spacing: -0.64px;
   }
