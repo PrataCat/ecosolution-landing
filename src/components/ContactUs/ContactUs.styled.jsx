@@ -6,6 +6,8 @@ export const ContactTitle = styled.h2`
   display: flex;
   justify-content: center;
 
+  color: ${theme.accentColorDark};
+
   @media screen and (min-width: 768px) {
     margin-top: 100px;
   }
@@ -15,10 +17,11 @@ export const ContactTitle = styled.h2`
   }
 `;
 
-export const ContactWrap = styled.div`
+export const ContactUsWrap = styled.div`
   margin-top: 24px;
   display: flex;
   flex-direction: column;
+  gap: 24px;
 
   @media screen and (min-width: 768px) {
     margin-top: 40px;
