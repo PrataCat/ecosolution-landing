@@ -3,6 +3,7 @@ import {
   ContactItem,
   ContactType,
   ContactWrap,
+  SocialIcon,
 } from "./Contacts.styled";
 import icon from "../../images/sprite.svg";
 
@@ -59,18 +60,18 @@ const Contacts = () => {
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          <ContactIcon width={24} height={24}>
+          <SocialIcon width={24} height={24}>
             <use href={`${icon}#icon-facebook`}></use>
-          </ContactIcon>
+          </SocialIcon>
         </a>
         <a
           href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          <ContactIcon width={24} height={24}>
+          <SocialIcon width={24} height={24}>
             <use href={`${icon}#icon-instagram`}></use>
-          </ContactIcon>
+          </SocialIcon>
         </a>
       </div>
     </ContactWrap>

@@ -1,11 +1,9 @@
 import { Link } from "react-scroll";
 import { Container } from "../../App.styled";
-import logoicon from "../../images/sprite.svg";
 import { LightBtn } from "../Buttons/Buttons";
 import {
   AddWrap,
   Address,
-  IconBtnLight,
   MainAdd,
   MainAddWrap,
   MainImg,
@@ -27,12 +25,7 @@ const Main = () => {
             biomass
           </MainText>
           <Link to="cases" spy={true} smooth={true}>
-            <LightBtn>
-              Learn more
-              <IconBtnLight width={32} height={32}>
-                <use href={`${logoicon}#icon-arrow-right`}></use>
-              </IconBtnLight>
-            </LightBtn>
+            <LightBtn>Learn more</LightBtn>
           </Link>
         </MainTextWrap>
       </MainWrap>

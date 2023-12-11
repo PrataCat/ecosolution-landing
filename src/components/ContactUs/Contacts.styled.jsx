@@ -64,4 +64,23 @@ export const ContactIcon = styled.svg`
   &:hover {
     stroke: ${theme.accentColor};
   }
+
+  @media screen and (min-width: 768px) {
+  }
+`;
+
+export const SocialIcon = styled.svg`
+  margin-right: 8px;
+  color: ${theme.accentColorDark};
+  fill: transparent;
+  stroke: ${theme.accentColorDark};
+  transition: stroke ${theme.transitionTimingFunction};
+
+  &:hover {
+    stroke: ${theme.accentColor};
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 `;

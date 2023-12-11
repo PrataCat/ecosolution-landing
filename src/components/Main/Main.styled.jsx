@@ -90,10 +90,6 @@ export const MainText = styled.p`
   }
 `;
 
-export const IconBtnLight = styled.svg`
-  fill: ${theme.accentColor};
-`;
-
 //--------------Info in the bottom part-----------
 
 export const MainAddWrap = styled.div`

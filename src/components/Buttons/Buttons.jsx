@@ -1,4 +1,5 @@
 import icon from "../../images/sprite.svg";
+import { IconBtnLight } from "../Buttons/Buttons.styled";
 import {
   AccentBtn,
   BtnMore,
@@ -16,7 +17,14 @@ export const ContactBtn = ({ prop, children }) => {
 };
 
 export const LightBtn = ({ children }) => {
-  return <SecondaryBtn>{children}</SecondaryBtn>;
+  return (
+    <SecondaryBtn>
+      {children}
+      <IconBtnLight width={32} height={32}>
+        <use href={`${icon}#icon-arrow-right`}></use>
+      </IconBtnLight>
+    </SecondaryBtn>
+  );
 };
 
 export const SliderBtnMore = () => {

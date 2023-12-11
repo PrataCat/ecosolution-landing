@@ -102,6 +102,10 @@ export const SecondaryBtn = styled.button`
   }
 `;
 
+export const IconBtnLight = styled.svg`
+  fill: ${theme.accentColor};
+`;
+
 export const BtnMore = styled.button`
   width: 60px;
   height: 60px;
