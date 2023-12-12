@@ -6,7 +6,7 @@ import { Form, Input, Label } from "./ContactForm.styled";
 
 const schema = z.object({
   fullname: z.string().min(3),
-  phone: z.string().min(12).max(12),
+  phone: z.number(),
   email: z.string().email(),
   message: z.string().optional(),
 });
@@ -20,12 +20,15 @@ const messages = {
 const ContactForm = () => {
   const {
     register,
-    control,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm({ resolver: zodResolver(schema) });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    reset();
+    console.log(data);
+  };
 
   return (
     <>
@@ -37,8 +40,7 @@ const ContactForm = () => {
           placeholder="John Rosie"
           {...register("fullname")}
         ></Input>
-        <p role="alert">{errors.fullname ? messages.fullName : ""}</p>
-        {/* {errors.fullname && <p>{messages.fullName}</p>} */}
+        <p>{errors.fullname ? messages.fullName : " "}</p>
         <Label htmlFor="email">* E-mail:</Label>
         <Input
           type="email"
@@ -52,7 +54,9 @@ const ContactForm = () => {
           type="number"
           id="phone"
           placeholder="380961234567"
-          {...register("phone")}
+          {...register("phone", {
+            valueAsNumber: true,
+          })}
         ></Input>
         {errors.phone && <p>{messages.phone}</p>}
         <Label htmlFor="message">Message:</Label>
