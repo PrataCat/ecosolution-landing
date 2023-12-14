@@ -25,7 +25,7 @@ const Main = () => {
             biomass
           </MainText>
           <Link to="cases" spy={true} smooth={true}>
-            <LightBtn>Learn more</LightBtn>
+            <LightBtn prop={"button"}>Learn more</LightBtn>
           </Link>
         </MainTextWrap>
       </MainWrap>

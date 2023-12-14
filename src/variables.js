@@ -10,6 +10,7 @@ export const theme = {
   secondaryLightColor: "#ffffff",
   secondaryHeaderBgColor: "transparent",
   secondaryTextColor: "#BDBDBD",
+  alertColor: "#D28B8B",
   mainGap: "12px",
   transitionTimingFunction: "400ms cubic-bezier(0.4, 0, 0.2, 1)",
 };

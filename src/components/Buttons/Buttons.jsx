@@ -9,16 +9,24 @@ import {
 } from "./Buttons.styled";
 
 export const BurgerBtn = ({ prop, children }) => {
-  return <BurgerMenuBtn onClick={prop}>{children}</BurgerMenuBtn>;
+  return (
+    <BurgerMenuBtn type="button" onClick={prop}>
+      {children}
+    </BurgerMenuBtn>
+  );
 };
 
 export const ContactBtn = ({ prop, children }) => {
-  return <AccentBtn active={prop}>{children}</AccentBtn>;
+  return (
+    <AccentBtn type="button" active={prop}>
+      {children}
+    </AccentBtn>
+  );
 };
 
-export const LightBtn = ({ children }) => {
+export const LightBtn = ({ prop, children }) => {
   return (
-    <SecondaryBtn>
+    <SecondaryBtn type={prop}>
       {children}
       <IconBtnLight width={32} height={32}>
         <use href={`${icon}#icon-arrow-right`}></use>
@@ -29,7 +37,7 @@ export const LightBtn = ({ children }) => {
 
 export const SliderBtnMore = () => {
   return (
-    <BtnMore>
+    <BtnMore type="button">
       <SliderBottomIcon width={28} height={28}>
         <use href={`${icon}#icon-arrow-diag1`}></use>
       </SliderBottomIcon>
