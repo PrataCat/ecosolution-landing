@@ -134,3 +134,32 @@ export const SliderBottomIcon = styled.svg`
   stroke: ${theme.accentColorDark};
   border-radius: 50px;
 `;
+
+export const BtnUp = styled.button`
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${theme.accentColor};
+  border-radius: 100px;
+  border: 0;
+
+  transition: background-color ${theme.transitionTimingFunction},
+    stroke ${theme.transitionTimingFunction};
+
+  &:hover {
+    background-color: ${theme.accentColorDark};
+  }
+
+  &:hover > svg {
+    stroke: ${theme.accentColor};
+  }
+`;
+
+export const IconBtnUp = styled.svg`
+  stroke: ${theme.accentColorDark};
+  fill: transparent;
+`;

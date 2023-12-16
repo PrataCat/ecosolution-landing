@@ -1,11 +1,12 @@
 import icon from "../../images/sprite.svg";
-import { IconBtnLight } from "../Buttons/Buttons.styled";
+import { IconBtnLight, IconBtnUp } from "../Buttons/Buttons.styled";
 import {
   AccentBtn,
   BtnMore,
   BurgerMenuBtn,
   SecondaryBtn,
   SliderBottomIcon,
+  BtnUp,
 } from "./Buttons.styled";
 
 export const BurgerBtn = ({ prop, children }) => {
@@ -42,5 +43,15 @@ export const SliderBtnMore = () => {
         <use href={`${icon}#icon-arrow-diag1`}></use>
       </SliderBottomIcon>
     </BtnMore>
+  );
+};
+
+export const BtnTop = () => {
+  return (
+    <BtnUp type="button">
+      <IconBtnUp width={32} height={32}>
+        <use href={`${icon}#icon-arrow-top`}></use>
+      </IconBtnUp>
+    </BtnUp>
   );
 };
