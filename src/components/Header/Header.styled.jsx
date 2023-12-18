@@ -21,6 +21,12 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & > a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 //------------------Logo----------------------

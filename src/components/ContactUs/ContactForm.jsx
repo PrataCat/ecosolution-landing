@@ -12,7 +12,7 @@ import {
 
 const schema = z.object({
   fullname: z.string().min(3),
-  phone: z.string().min(12),
+  phone: z.string().min(12).max(12),
   email: z.string().email(),
   message: z.string().optional(),
 });

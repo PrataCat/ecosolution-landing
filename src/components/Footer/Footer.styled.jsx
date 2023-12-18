@@ -2,21 +2,38 @@ import styled from "styled-components";
 import { theme } from "../../variables";
 
 export const FooterWrap = styled.footer`
-  margin-top: 36px;
-  padding-top: 24px;
   width: 100%;
-  border-top: 1px solid ${theme.accentColor};
+  margin-top: 36px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
 `;
 
 export const FooterNavWrap = styled.section`
-  height: 88px;
+  height: 113px;
+  padding-top: 24px;
   position: relative;
+
+  border-top: 1px solid ${theme.accentColor};
+
+  @media screen and (min-width: 768px) {
+    height: 81px;
+    padding-top: 40px;
+  }
 `;
 
-export const LogoWrapper = styled.div`
+export const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & > a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const SocialWrap = styled.div`
@@ -32,6 +49,16 @@ export const SocialWrap = styled.div`
   & a {
     display: inline-block;
     height: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 366px;
+    transform: translateX(0);
+    bottom: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 781px;
   }
 `;
 
@@ -57,9 +84,13 @@ export const AddressWrap = styled.section`
 
   font-family: Fira Sans;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const FooterText = styled.p`
@@ -67,7 +98,10 @@ export const FooterText = styled.p`
 
   font-family: Fira Sans;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 `;

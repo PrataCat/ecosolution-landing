@@ -10,23 +10,25 @@ import {
   SocialWrap,
   FooterWrap,
   FooterNavWrap,
-  LogoWrapper,
+  LinkWrapper,
 } from "./Footer.styled";
-import { Address } from "../Main/Main.styled";
+import { AddWrap, Address } from "../Main/Main.styled";
 
 const Footer = () => {
   return (
-    <Container>
-      <FooterWrap>
+    <FooterWrap>
+      <Container>
         <FooterNavWrap>
-          <LogoWrapper>
+          <LinkWrapper>
             <Link to="main" spy={true} smooth={true}>
               <Logo width={269} height={40}>
                 <use href={`${icon}#icon-logo-svg`}></use>
               </Logo>
             </Link>
-            <BtnTop />
-          </LogoWrapper>
+            <Link to="main" spy={true} smooth={true}>
+              <BtnTop />
+            </Link>
+          </LinkWrapper>
           <SocialWrap>
             <a
               href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
@@ -57,13 +59,15 @@ const Footer = () => {
           >
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </Address>
-          <Address href="mailto:office@ecosolution.co">
-            office@ecosolution.com
-          </Address>
-          <FooterText>ecosolution © 2023</FooterText>
+          <AddWrap>
+            <Address href="mailto:office@ecosolution.co">
+              office@ecosolution.com
+            </Address>
+            <FooterText>ecosolution © 2023</FooterText>
+          </AddWrap>
         </AddressWrap>
-      </FooterWrap>
-    </Container>
+      </Container>
+    </FooterWrap>
   );
 };
 

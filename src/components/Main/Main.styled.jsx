@@ -115,15 +115,24 @@ export const Address = styled.a`
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.64px;
+  transition: color ${theme.transitionTimingFunction};
+
+  &:hover,
+  &:focus {
+    color: ${theme.accentColor};
+  }
 `;
 
 export const AddWrap = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 16px;
 
   @media screen and (min-width: 768px) {
     width: 342px;
+    flex-direction: row;
     justify-content: space-between;
   }
 
