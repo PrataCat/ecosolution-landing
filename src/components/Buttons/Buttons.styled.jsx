@@ -13,11 +13,17 @@ export const BurgerMenuBtn = styled.button`
   border: none;
   transition: fill ${theme.transitionTimingFunction};
 
+  &:focus {
+    outline: 1px solid #173d33;
+  }
+
   &:hover > svg,
   &:focus > svg {
     fill: ${theme.accentColor};
   }
 `;
+
+//-------------------Dark buttons------------------------
 
 export const AccentBtn = styled.button`
   width: 130px;
@@ -55,15 +61,19 @@ export const AccentBtn = styled.button`
     display: flex;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${theme.accentColor};
     background-color: ${theme.accentColorDark};
   }
 
-  &:hover > svg {
+  &:hover > svg,
+  &:focus > svg {
     fill: ${theme.accentColor};
   }
 `;
+
+//-------------------Light buttons------------------------
 
 export const SecondaryBtn = styled.button`
   height: 40px;
@@ -92,18 +102,80 @@ export const SecondaryBtn = styled.button`
     background-color ${theme.transitionTimingFunction},
     fill ${theme.transitionTimingFunction};
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${theme.accentColor};
     background-color: ${theme.accentColorDark};
   }
 
-  &:hover > svg {
+  &:hover > svg,
+  &:focus > svg {
     fill: ${theme.accentColor};
   }
 `;
 
 export const IconBtnLight = styled.svg`
   fill: ${theme.accentColor};
+`;
+
+//-------------------Slider------------------------
+
+export const PrevBtn = styled.button`
+  width: 66px;
+  height: 66px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover > svg,
+  &:focus > svg {
+    stroke: ${theme.accentColor};
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 84px;
+    height: 84px;
+  }
+`;
+
+export const NextBtn = styled.button`
+  width: 66px;
+  height: 66px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover > svg,
+  &:focus > svg {
+    stroke: ${theme.accentColor};
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 84px;
+    height: 84px;
+  }
+`;
+
+export const SliderIcon = styled.svg`
+  width: 66px;
+  height: 66px;
+
+  fill: transparent;
+  stroke: ${theme.accentColorDark};
+  transition: stroke ${theme.transitionTimingFunction};
+
+  @media screen and (min-width: 1280px) {
+    width: 84px;
+    height: 84px;
+  }
 `;
 
 export const BtnMore = styled.button`
@@ -122,9 +194,13 @@ export const BtnMore = styled.button`
     stroke ${theme.transitionTimingFunction};
 
   &:hover,
-  &:hover > svg {
-    stroke: ${theme.accentColor};
+  &:focus {
     background-color: ${theme.accentColorDark};
+  }
+
+  &:hover > svg,
+  &:focus > svg {
+    stroke: ${theme.accentColor};
   }
 `;
 
@@ -134,6 +210,8 @@ export const SliderBottomIcon = styled.svg`
   stroke: ${theme.accentColorDark};
   border-radius: 50px;
 `;
+
+//-------------------Footer------------------------
 
 export const BtnUp = styled.button`
   width: 32px;
@@ -150,11 +228,13 @@ export const BtnUp = styled.button`
   transition: background-color ${theme.transitionTimingFunction},
     stroke ${theme.transitionTimingFunction};
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${theme.accentColorDark};
   }
 
-  &:hover > svg {
+  &:hover > svg,
+  &:focus > svg {
     stroke: ${theme.accentColor};
   }
 `;

@@ -44,7 +44,8 @@ export const ContactItem = styled.a`
   font-weight: 400;
   letter-spacing: -0.8px;
 
-  &:hover > svg {
+  &:hover > svg,
+  &:focus > svg {
     stroke: ${theme.accentColor};
   }
 
@@ -61,7 +62,8 @@ export const ContactIcon = styled.svg`
   stroke: ${theme.accentColorDark};
   transition: stroke ${theme.transitionTimingFunction};
 
-  &:hover {
+  &:hover,
+  &:focus {
     stroke: ${theme.accentColor};
   }
 
@@ -69,18 +71,33 @@ export const ContactIcon = styled.svg`
   }
 `;
 
+export const SocialLinkWrap = styled.div`
+  display: flex;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 12px;
+    gap: 32px;
+  }
+`;
+
+export const SocialLink = styled.a`
+  width: 24px;
+  height: 24px;
+
+  display: inline-block;
+
+  color: ${theme.accentColorDark};
+
+  &:hover > svg,
+  &:focus > svg {
+    stroke: ${theme.accentColor};
+  }
+`;
+
 export const SocialIcon = styled.svg`
-  margin-right: 8px;
   color: ${theme.accentColorDark};
   fill: transparent;
   stroke: ${theme.accentColorDark};
   transition: stroke ${theme.transitionTimingFunction};
-
-  &:hover {
-    stroke: ${theme.accentColor};
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 32px;
-  }
 `;

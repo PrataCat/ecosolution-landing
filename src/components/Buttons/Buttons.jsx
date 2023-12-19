@@ -1,8 +1,12 @@
 import icon from "../../images/sprite.svg";
-import { IconBtnLight, IconBtnUp } from "../Buttons/Buttons.styled";
 import {
+  IconBtnLight,
+  IconBtnUp,
+  SliderIcon,
   AccentBtn,
   BtnMore,
+  PrevBtn,
+  NextBtn,
   BurgerMenuBtn,
   SecondaryBtn,
   SliderBottomIcon,
@@ -16,6 +20,7 @@ export const BurgerBtn = ({ prop, children }) => {
     </BurgerMenuBtn>
   );
 };
+//-------------------Dark buttons------------------------
 
 export const ContactBtn = ({ prop, children }) => {
   return (
@@ -24,6 +29,8 @@ export const ContactBtn = ({ prop, children }) => {
     </AccentBtn>
   );
 };
+
+//-------------------Light buttons------------------------
 
 export const LightBtn = ({ prop, children }) => {
   return (
@@ -36,6 +43,28 @@ export const LightBtn = ({ prop, children }) => {
   );
 };
 
+//-------------------Slider------------------------
+
+export const SwiperBtnPrev = () => {
+  return (
+    <PrevBtn>
+      <SliderIcon width={66} height={66}>
+        <use href={`${icon}#icon-slide-left`}></use>
+      </SliderIcon>
+    </PrevBtn>
+  );
+};
+
+export const SwiperBtnNext = () => {
+  return (
+    <NextBtn>
+      <SliderIcon width={66} height={66}>
+        <use href={`${icon}#icon-slide-right`}></use>
+      </SliderIcon>
+    </NextBtn>
+  );
+};
+
 export const SliderBtnMore = () => {
   return (
     <BtnMore type="button">
@@ -45,6 +74,8 @@ export const SliderBtnMore = () => {
     </BtnMore>
   );
 };
+
+//-------------------Footer------------------------
 
 export const BtnTop = () => {
   return (

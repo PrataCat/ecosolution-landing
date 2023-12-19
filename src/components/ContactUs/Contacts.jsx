@@ -4,6 +4,8 @@ import {
   ContactType,
   ContactWrap,
   SocialIcon,
+  SocialLink,
+  SocialLinkWrap,
 } from "./Contacts.styled";
 import icon from "../../images/sprite.svg";
 
@@ -55,24 +57,26 @@ const Contacts = () => {
       </div>
       <div>
         <ContactType>Social Networks:</ContactType>
-        <a
-          href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          <SocialIcon width={24} height={24}>
-            <use href={`${icon}#icon-facebook`}></use>
-          </SocialIcon>
-        </a>
-        <a
-          href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          <SocialIcon width={24} height={24}>
-            <use href={`${icon}#icon-instagram`}></use>
-          </SocialIcon>
-        </a>
+        <SocialLinkWrap>
+          <SocialLink
+            href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <SocialIcon width={24} height={24}>
+              <use href={`${icon}#icon-facebook`}></use>
+            </SocialIcon>
+          </SocialLink>
+          <SocialLink
+            href="https://maps.app.goo.gl/jUpySPTpGMgWA1WR6"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <SocialIcon width={24} height={24}>
+              <use href={`${icon}#icon-instagram`}></use>
+            </SocialIcon>
+          </SocialLink>
+        </SocialLinkWrap>
       </div>
     </ContactWrap>
   );

@@ -4,15 +4,11 @@ import "swiper/css/pagination";
 import "swiper/css";
 import { useEffect } from "react";
 
-import icon from "../../images/sprite.svg";
 import { Container } from "../../App.styled";
 import SwiperSlide from "./SwiperSlide";
 import {
   CasesTitle,
-  SwiperBtnNext,
-  SwiperBtnPrev,
   SwiperSlider,
-  SliderIcon,
   SwiperBtnWrap,
   SwiperPage,
   SwiperNav,
@@ -29,6 +25,8 @@ import slideImg4 from "../../images/slide4.jpg";
 import slideImg4ret from "../../images/slide4-2x.jpg";
 import slideImg5 from "../../images/slide5.jpg";
 import slideImg5ret from "../../images/slide5-2x.jpg";
+import { SwiperBtnNext, SwiperBtnPrev } from "../Buttons/Buttons";
+import { NextBtn, PrevBtn } from "../Buttons/Buttons.styled";
 
 const slideData = {
   one: {
@@ -65,8 +63,8 @@ const Cases = () => {
       slidesPerGroup: 1,
 
       navigation: {
-        nextEl: `${SwiperBtnNext}`,
-        prevEl: `${SwiperBtnPrev}`,
+        nextEl: `${NextBtn}`,
+        prevEl: `${PrevBtn}`,
       },
       pagination: {
         el: `${SwiperPage}`,
@@ -106,16 +104,8 @@ const Cases = () => {
           <SwiperNav>
             <SwiperPage></SwiperPage>
             <SwiperBtnWrap>
-              <SwiperBtnPrev>
-                <SliderIcon width={66} height={66}>
-                  <use href={`${icon}#icon-slide-left`}></use>
-                </SliderIcon>
-              </SwiperBtnPrev>
-              <SwiperBtnNext>
-                <SliderIcon width={66} height={66}>
-                  <use href={`${icon}#icon-slide-right`}></use>
-                </SliderIcon>
-              </SwiperBtnNext>
+              <SwiperBtnPrev />
+              <SwiperBtnNext />
             </SwiperBtnWrap>
           </SwiperNav>
         </SwiperHeadWrap>

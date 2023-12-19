@@ -90,7 +90,6 @@ export const SwiperPage = styled.div`
 
   color: ${theme.accentColorDark};
 
-  text-align: justify;
   font-family: Fira Sans;
   font-size: 28px;
   font-weight: 300;
@@ -98,52 +97,12 @@ export const SwiperPage = styled.div`
 `;
 
 export const SwiperBtnWrap = styled.div`
+  width: 144px;
   display: flex;
-  gap: ${theme.mainGap};
-  align-self: flex-start;
+  justify-content: space-Between;
+  align-items: center;
 
   @media screen and (min-width: 1280px) {
-    gap: 24px;
+    width: 192px;
   }
-`;
-
-export const SwiperBtnPrev = styled.button`
-  width: 66px;
-  height: 66px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: transparent;
-  border: none;
-
-  &:hover > svg {
-    stroke: ${theme.accentColor};
-  }
-`;
-
-export const SwiperBtnNext = styled.button`
-  width: 66px;
-  height: 66px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: transparent;
-  border: none;
-
-  &:hover > svg {
-    stroke: ${theme.accentColor};
-  }
-`;
-
-export const SliderIcon = styled.svg`
-  width: 66px;
-  height: 66px;
-
-  fill: transparent;
-  stroke: ${theme.accentColorDark};
-  transition: stroke ${theme.transitionTimingFunction};
 `;
