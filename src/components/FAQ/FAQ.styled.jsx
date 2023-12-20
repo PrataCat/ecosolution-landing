@@ -9,6 +9,7 @@ export const AccordionWrap = styled.div`
     margin-top: 100px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     position: relative;
   }
 
@@ -54,17 +55,21 @@ export const LastQuestWrap = styled.div`
   width: 100%;
   margin-top: 36px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: ${theme.mainGap};
+
   @media screen and (min-width: 768px) {
-    width: 347px;
-    margin-left: 24px;
+    width: 299px;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 43px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 398px;
-    margin-left: 185px;
+    width: 399px;
+    right: 60px;
   }
 `;
 

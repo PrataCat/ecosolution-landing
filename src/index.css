@@ -21,6 +21,7 @@ body {
 button {
   padding: 0;
   width: fit-content;
+  display: inline-block;
   cursor: pointer;
 
   &:focus {
@@ -67,6 +68,7 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 

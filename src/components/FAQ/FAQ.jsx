@@ -85,7 +85,7 @@ const FAQ = () => {
             isActive={currentActive === 5}
             onClick={() => hendleAccordionClick(5)}
           />
-        </AccordionList>{" "}
+        </AccordionList>
         <LastQuestWrap>
           <LastQuest>Didn't find the answer to your question?</LastQuest>
           <Link to="contact-us" spy={true} smooth={true}>

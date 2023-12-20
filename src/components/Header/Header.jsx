@@ -6,6 +6,7 @@ import {
   HeaderWrap,
   IconContact,
   Logo,
+  LogoBtn,
   Nav,
 } from "./Header.styled";
 import logoicon from "../../images/sprite.svg";
@@ -49,10 +50,13 @@ const Header = () => {
       <Container>
         <Nav>
           <Link to="main" spy={true} smooth={true}>
-            <Logo width={269} height={40}>
-              <use href={`${logoicon}#icon-logo-svg`}></use>
-            </Logo>
+            <LogoBtn type="button">
+              <Logo width={269} height={40}>
+                <use href={`${logoicon}#icon-logo-svg`}></use>
+              </Logo>{" "}
+            </LogoBtn>
           </Link>
+
           <BtnWrap>
             {!isOpenMenu ? (
               <BurgerBtn prop={hendleClick}>

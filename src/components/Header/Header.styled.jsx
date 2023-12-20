@@ -30,11 +30,19 @@ export const Nav = styled.nav`
 `;
 
 //------------------Logo----------------------
-export const Logo = styled.svg`
+export const LogoBtn = styled.button`
   margin-right: 11px;
 
+  background-color: transparent;
+  border: none;
+
+  &:focus > svg {
+    fill: ${theme.accentColor};
+  }
+`;
+
+export const Logo = styled.svg`
   fill: ${theme.accentColorDark};
-  cursor: pointer;
   transition: fill ${theme.transitionTimingFunction};
 
   &:hover,

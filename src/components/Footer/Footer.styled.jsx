@@ -68,7 +68,8 @@ export const FooterSocialIcon = styled.svg`
   stroke: ${theme.accentColorDark};
   transition: stroke ${theme.transitionTimingFunction};
 
-  &:hover {
+  &:hover,
+  &:focus {
     stroke: ${theme.accentColor};
   }
 `;

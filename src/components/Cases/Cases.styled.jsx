@@ -6,8 +6,6 @@ export const SwiperSlider = styled.div`
   overflow: hidden;
 `;
 
-//-----------------Nav-----------------
-
 export const SwiperHeadWrap = styled.div`
   width: 100%;
   min-width: 0;
@@ -67,6 +65,8 @@ export const CasesTitle = styled.h2`
   }
 `;
 
+//-----------------Nav-----------------
+
 export const SwiperNav = styled.div`
   width: 100%;
   height: 73px;
@@ -99,7 +99,7 @@ export const SwiperPage = styled.div`
 export const SwiperBtnWrap = styled.div`
   width: 144px;
   display: flex;
-  justify-content: space-Between;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: 1280px) {
