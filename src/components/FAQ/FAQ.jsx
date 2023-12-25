@@ -89,7 +89,7 @@ const FAQ = () => {
         <LastQuestWrap>
           <LastQuest>Didn't find the answer to your question?</LastQuest>
           <Link to="contact-us" spy={true} smooth={true}>
-            <ContactBtn prop={"active"}>
+            <ContactBtn props="flex">
               Contact Us
               <IconContact width={14} height={14}>
                 <use href={`${icon}#icon-arrow-down`}></use>

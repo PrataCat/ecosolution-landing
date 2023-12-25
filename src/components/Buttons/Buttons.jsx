@@ -22,9 +22,9 @@ export const BurgerBtn = ({ prop, children }) => {
 };
 //-------------------Dark buttons------------------------
 
-export const ContactBtn = ({ prop, children }) => {
+export const ContactBtn = ({ children, props }) => {
   return (
-    <AccentBtn type="button" active={prop}>
+    <AccentBtn $display={props} type="button">
       {children}
     </AccentBtn>
   );

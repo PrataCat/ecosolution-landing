@@ -54,7 +54,7 @@ export const StrokeOne = styled.div`
 
   background-color: ${theme.accentColor};
   transform: ${(props) =>
-    props.active
+    props.$active
       ? "translateX(calc(8px / 2 - 0.5px)) rotate(90deg)"
       : "translateX(calc(8px / 2 - 0.5px)) rotate(0deg)"};
   transition: 0.5s all;
@@ -64,7 +64,7 @@ export const StrokeOne = styled.div`
     height: 14px;
 
     transform: ${(props) =>
-      props.active
+      props.$active
         ? "translateX(calc(14px / 2 - 1px)) rotate(90deg)"
         : "translateX(calc(14px / 2 - 1px)) rotate(0deg)"};
   }
@@ -76,7 +76,7 @@ export const StrokeTwo = styled.div`
 
   background-color: ${theme.accentColor};
   transform: ${(props) =>
-    props.active
+    props.$active
       ? "translateY(calc(-8px / 2 - 0.5px))"
       : "translateY(calc(-8px / 2 - 0.5px))"};
   transition: 0.5s all;
@@ -85,7 +85,7 @@ export const StrokeTwo = styled.div`
     width: 14px;
     height: 2px;
     transform: ${(props) =>
-      props.active
+      props.$active
         ? "translateY(calc(-14px / 2 - 1px))"
         : "translateY(calc(-14px / 2 - 1px))"};
   }
@@ -110,8 +110,8 @@ export const Ask = styled.h4`
 `;
 
 export const Answer = styled.p`
-  max-height: ${(props) => (props.active ? "auto " : "0")};
-  margin-top: ${(props) => (props.active ? "16px" : "0")};
+  max-height: ${(props) => (props.$active ? "auto " : "0")};
+  margin-top: ${(props) => (props.$active ? "16px" : "0")};
   margin-left: 24px;
   margin-right: 0;
 
@@ -136,7 +136,7 @@ export const Answer = styled.p`
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: ${(props) => (props.active ? "24px" : "0")};
+    margin-top: ${(props) => (props.$active ? "24px" : "0")};
     margin-left: 52px;
     font-size: 16px;
     letter-spacing: -0.64px;

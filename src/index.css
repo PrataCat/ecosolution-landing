@@ -23,10 +23,6 @@ button {
   width: fit-content;
   display: inline-block;
   cursor: pointer;
-
-  &:focus {
-    outline: 1px solid #173d33;
-  }
 }
 
 html,

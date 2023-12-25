@@ -10,15 +10,15 @@ import {
 
 const AccordionItem = ({ ask, answer, isActive, onClick }) => {
   return (
-    <Item active={isActive ? "true" : null} onClick={onClick}>
+    <Item onClick={onClick}>
       <AskWrap>
-        <AccordionIcon active={isActive ? "true" : null}>
-          <StrokeOne active={isActive ? "true" : null}></StrokeOne>
-          <StrokeTwo></StrokeTwo>
+        <AccordionIcon>
+          <StrokeOne $active={isActive ? "true" : null} />
+          <StrokeTwo $active={isActive ? "true" : null} />
         </AccordionIcon>
         <Ask>{ask}</Ask>
       </AskWrap>
-      <Answer active={isActive ? "true" : null}>{answer}</Answer>
+      <Answer $active={isActive ? "true" : null}>{answer}</Answer>
     </Item>
   );
 };

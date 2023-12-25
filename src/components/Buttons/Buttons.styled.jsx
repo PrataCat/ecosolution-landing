@@ -30,10 +30,7 @@ export const AccentBtn = styled.button`
   height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: ${(props) => (props.active ? "flex" : "none")};
-  margin-left: ${(props) => (props.active ? "auto" : "0")};
-  margin-right: ${(props) => (props.active ? "auto" : "0")};
-  margin-top: ${(props) => (props.active ? "12px" : "0")};
+  display: ${(props) => props.$display || "none"};
   justify-content: center;
   align-items: center;
   gap: ${theme.mainGap};
@@ -123,6 +120,7 @@ export const IconBtnLight = styled.svg`
 export const PrevBtn = styled.button`
   width: 66px;
   height: 66px;
+  margin-right: 12px;
 
   display: flex;
   justify-content: center;
@@ -139,6 +137,7 @@ export const PrevBtn = styled.button`
   @media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
+    margin-right: 24px;
   }
 `;
 
