@@ -51,7 +51,7 @@ const BurgerMenu = ({ closeModal, currentSection }) => {
           </ModalBtn>
         </BtnWrap>
         <NavList>
-          <Item current={currentSection === "Main" ? "current" : ""}>
+          <Item $current={currentSection === "Main" ? "current" : ""}>
             <Link onClick={closeModal} to="main" spy={true} smooth={true}>
               Main
             </Link>
@@ -59,7 +59,7 @@ const BurgerMenu = ({ closeModal, currentSection }) => {
               <use href={`${logoicon}#icon-arrow-diagonal2`}></use>
             </NavIcon>
           </Item>
-          <Item current={currentSection === "About" ? "current" : ""}>
+          <Item $current={currentSection === "About" ? "current" : ""}>
             <Link onClick={closeModal} to="about" spy={true} smooth={true}>
               About
             </Link>
@@ -67,7 +67,7 @@ const BurgerMenu = ({ closeModal, currentSection }) => {
               <use href={`${logoicon}#icon-arrow-diagonal2`}></use>
             </NavIcon>
           </Item>
-          <Item current={currentSection === "Cases" ? "current" : ""}>
+          <Item $current={currentSection === "Cases" ? "current" : ""}>
             <Link onClick={closeModal} to="cases" spy={true} smooth={true}>
               Cases
             </Link>
@@ -75,7 +75,7 @@ const BurgerMenu = ({ closeModal, currentSection }) => {
               <use href={`${logoicon}#icon-arrow-diagonal2`}></use>
             </NavIcon>
           </Item>
-          <Item current={currentSection === "FAQ" ? "current" : ""}>
+          <Item $current={currentSection === "FAQ" ? "current" : ""}>
             <Link onClick={closeModal} to="faq" spy={true} smooth={true}>
               FAQ
             </Link>
@@ -83,7 +83,7 @@ const BurgerMenu = ({ closeModal, currentSection }) => {
               <use href={`${logoicon}#icon-arrow-diagonal2`}></use>
             </NavIcon>
           </Item>
-          <Item current={currentSection === "Contact Us" ? "current" : ""}>
+          <Item $current={currentSection === "Contact Us" ? "current" : ""}>
             <Link onClick={closeModal} to="contact-us" spy={true} smooth={true}>
               Contact Us
             </Link>

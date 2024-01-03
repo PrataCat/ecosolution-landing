@@ -125,7 +125,7 @@ export const NavList = styled.ul`
 
 export const Item = styled.li`
   color: ${(props) =>
-    props.current ? theme.accentColor : theme.secondaryMenuColor};
+    props.$current ? theme.accentColor : theme.secondaryMenuColor};
 
   font-family: Fira Sans;
   font-size: 24px;
